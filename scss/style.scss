@@ -1,0 +1,26 @@
+//Общие стили, так как это всё-таки ядро стилей, я не буду изменять
+//своим принципам
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+//Стили
+@import '_var';
+@import '_slider-module';
+
+//Шрифты
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap';

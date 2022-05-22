@@ -1,0 +1,18 @@
+$gray-background: #f5f5f5;
+$slider-button: #D0D3D7;
+$MonTitle: 'Montserrat', sans-serif;
+$Roboto-text: 'Roboto', sans-serif;
+
+%MontserratTitle {
+    font-family: $MonTitle;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 43.88px;
+}
+
+%RobotoText {
+    font-family: $Roboto-text;
+    font-size: 20px;
+    line-height: 23.44px;
+    margin: 0;
+}
