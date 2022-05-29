@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -20,6 +21,120 @@ a {
 //Стили
 @import '_var';
 @import '_slider-module';
+
+@media (max-width: 1285px) {
+    .slider-module {
+        flex-direction: column;
+        height: 1022px;
+
+        .text-block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .description {
+                max-width: 615px;
+            }
+        }
+    }
+}
+
+@media (max-width: 912px) {
+    .slider {
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .slider-track {
+        padding-left: 0 !important;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .slider-module {
+        height: auto;
+        gap: 40px;
+        .text-block {
+            align-items: flex-start;
+            h1 {
+                font-size: 18px;
+            }
+            .description p {
+                font-size: 14px;
+            }
+        }
+        .slider {
+            gap: 5px;
+            height: auto;
+            .slider-container {
+                min-width: 220px;
+                
+                .slider-item {
+                    height: 310px;
+                    
+                    .item-about {
+                        font-size: 90px;
+                        padding-top: 10px;
+
+                        .item-name {
+                            font-size: 16px;
+
+                            &>p:last-child {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    
+                    .card-image {
+                        padding: 5px;
+                        width: 226px;
+                        height: 162px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    
+                    .link {
+                        width: 61px;
+                        height: 26px;
+                        padding-right: 8px;
+                        &:hover {
+                            padding-right: 1px;
+                        }
+                        img {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+            
+            .btn-next,
+            .btn-prev {
+                min-width: 25px;
+                min-height: 25px;
+                background-size: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 345px) {
+    .slider-module {
+        .slider {
+            .slider-container {
+                .slider-item {
+                    .card-image {
+                        width: 186px;
+                        height: 162px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //Шрифты
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap';
