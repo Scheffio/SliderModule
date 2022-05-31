@@ -61,7 +61,7 @@ const module = {
         document.querySelector('.btn-prev').addEventListener('click', () => module.prevBtn())
 
         if (this.container.clientWidth < 426) {
-            module.itemsWidth = this.container.clientWidth / module.toShow
+            this.itemsWidth = this.container.clientWidth / this.toShow
         }else {
             this.itemsWidth = this.container.clientWidth / this.toShow - 10
         }
@@ -72,12 +72,13 @@ const module = {
     },
     nextBtn() {
         this.position += this.movePosition
+        console.log(`Pos = ${this.position}, MovePos = ${this.movePosition}, Items = ${this.itemsCount}, ItemsWidth = ${this.itemsWidth}`);
         if(this.container.clientWidth > 426) {
-            if(this.position >= (this.itemsCount - 1) * this.itemsWidth) {
+            if(this.position > (this.itemsCount - 1) * this.itemsWidth) {
                 this.position = 0
             }
         }else {
-            if(this.position >= (this.itemsCount + 1) * this.itemsWidth) {
+            if(this.position > (this.itemsCount) * this.itemsWidth) {
                 this.position = 0
             }
         }

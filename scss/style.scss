@@ -40,81 +40,205 @@ a {
     }
 }
 
-@media (max-width: 912px) {
-    .slider {
-        justify-content: flex-start;
-        gap: 5px;
-    }
-
-    .slider-track {
-        padding-left: 0 !important;
-    }
-}
-
-
-@media (max-width: 425px) {
+@media (max-width: 900px) {
     .slider-module {
-        height: auto;
-        gap: 40px;
-        .text-block {
-            align-items: flex-start;
-            h1 {
-                font-size: 18px;
-            }
-            .description p {
-                font-size: 14px;
-            }
-        }
         .slider {
-            gap: 5px;
-            height: auto;
             .slider-container {
-                min-width: 220px;
-                
-                .slider-item {
-                    height: 310px;
-                    
-                    .item-about {
-                        font-size: 90px;
-                        padding-top: 10px;
+                min-width: 500px;
 
-                        .item-name {
-                            font-size: 16px;
+                .slider-track {
+                    .slider-item {
+                        padding-bottom: 0px;
+                        height: 480px;
 
-                            &>p:last-child {
-                                font-size: 16px;
-                            }
-                        }
-                    }
-                    
-                    .card-image {
-                        padding: 5px;
-                        width: 226px;
-                        height: 162px;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                    
-                    .link {
-                        width: 61px;
-                        height: 26px;
-                        padding-right: 8px;
-                        &:hover {
-                            padding-right: 1px;
-                        }
-                        img {
-                            width: 50%;
+                        .link {
+                            height: 40px;
+                            width: 107px;
+                            right: 0;
                         }
                     }
                 }
             }
-            
+        }
+    }
+}
+
+@media (max-width: 805px) {
+    .slider-module {
+        gap: 60px;
+        .slider {
+            height: auto;
+            gap: 10px;
+            .slider-container {
+
+                .slider-track {
+                    .slider-item {
+                        padding-bottom: 30px;
+                        height: 375px;
+                        .item-about {
+                            font-size: 110px;
+                            .item-name {
+                                font-size: 18px;
+                            }
+                        }
+                        .card-image {
+                            width: 240px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .link {
+                            height: 40px;
+                            width: 107px;
+                            right: 10px;
+                        }
+                    }
+                }
+            }
             .btn-next,
             .btn-prev {
-                min-width: 25px;
-                min-height: 25px;
+                min-width: 35px;
+                min-height: 35px;
+                background-size: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .slider-module {
+        height: auto;
+        padding-bottom: 60px;
+        .text-block {
+            align-items: flex-start;
+        }
+        .slider {
+            gap: 10px;
+            .slider-container {
+                min-width: 430px;
+
+                .slider-track {
+                    .slider-item {
+                        padding-bottom: 30px;
+                        height: 300px;
+                        .item-about {
+                            font-size: 90px;
+                            .item-name {
+                                padding-top: 10px;
+                                font-size: 16px;
+                                &>p:last-child {
+                                    font-size: 16px;
+                                    margin-top: .5rem;
+                                }
+                            }
+                        }
+                        .card-image {
+                            width: 170px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .link {
+                            height: 30px;
+                            width: 65px;
+                            right: 10px;
+                            padding-right: 12px;
+                            &:hover {
+                                padding-right: 2px;
+                            }
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-next,
+            .btn-prev {
+                min-width: 35px;
+                min-height: 35px;
+                background-size: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .slider-module {
+        height: auto;
+        gap: 40px;
+
+        .text-block {
+            align-items: flex-start;
+
+            h1 {
+                font-size: 18px;
+            }
+
+            .description p {
+                font-size: 14px;
+            }
+        }
+
+        .slider {
+            gap: 20px;
+            height: auto;
+
+            .slider-container {
+                min-width: 220px;
+                max-width: 230px;
+                .slider-track {
+                    .slider-item {
+                        height: 300px;
+                        padding: 0px 20px 30px 20px;
+    
+                        .item-about {
+                            font-size: 90px;
+                            padding-top: 0px;
+    
+                            .item-name {
+                                font-size: 13px;
+                                padding-top: 0px;
+    
+                                &>p:last-child {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+    
+                        .card-image {
+                            width: 186px;
+                            height: 152px;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+    
+                        .link {
+                            width: 61px;
+                            height: 26px;
+                            padding-right: 8px;
+    
+                            &:hover {
+                                padding-right: 1px;
+                            }
+    
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn-next,
+            .btn-prev {
+                min-width: 35px;
+                min-height: 35px;
                 background-size: 70%;
             }
         }
@@ -124,13 +248,27 @@ a {
 @media (max-width: 345px) {
     .slider-module {
         .slider {
+            gap: 5px;
             .slider-container {
-                .slider-item {
-                    .card-image {
-                        width: 186px;
-                        height: 162px;
+                min-width: 220px;
+                .slider-track {
+                    .slider-item {
+                        padding: 0;
+                        .card-image {
+                            width: 186px;
+                            height: 162px;
+                            img {
+                                width: 100%;
+                            }
+                        }
                     }
                 }
+            }
+            .btn-next,
+            .btn-prev {
+                min-width: 25px;
+                min-height: 25px;
+                background-size: 80%;
             }
         }
     }
